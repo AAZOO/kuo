@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KUO YEN-HONG</title>
+  <link rel="icon" href="images/kuo.ico" type="image/x-icon" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="KUO YEN-HONG">
+  <meta property="og:description" content="喜歡關注 UI/UX 與網頁設計，樂於將觀察到的趨勢與團隊分享，共同創造不一樣的專案成果！">
+  <meta property="og:url" content="https://aazoo.github.io/kuo/portfolio.html">
+  <meta property="og:image" content="images/fb.jpg">
+  <meta property="og:image:type" content="image/jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fancybox.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="about.html">
+        <h1 class="logo">KUO</h1>
+      </a>
+      <div class="menuM">
+        <div class="menuM--top"></div>
+        <div class="menuM--mid"></div>
+        <div class="menuM--btm"></div>
+      </div>
+    </div>
+  </header>
+  <div class="menuMList">
+    <ul>
+      <li>
+        <a href="portfolio.html">作品集</a>
+      </li>
+      <li>
+        <a href="about.html">關於我</a>
+      </li>
+    </ul>
+  </div>
+  <div class="wrap">
+    <div class="profile">
+      <div class="profile_circle">
+        <img class="profile_img" src="./images/borise.jpg" alt="Kuo Yen Hong">
+      </div>
+      <h2 class="profile_name">KUO YEN-HONG</h2>
+      <p class="profile_job">UI/UX designer | Front-end engineer </p>
+      <div class="profile_connect">
+        <a href="mailto:maurice7946@gmail.com"><img src="images/email.svg" alt="email"></a>
+        <a href="https://line.me/ti/p/~borise" target="_blank"><img src="images/line.svg" alt="line"></a>
+      </div>
+      <ul class="menuPC">
+        <li><a href="portfolio.html">作品集</a></li>
+        <li><a href="about.html">關於我</a></li>
+      </ul>
+    </div>
+    <!--hr class="divider"-->
+    <ul class="tabs">
+      <!-- 麵包 -->
+      <div class="bread">
+        <a href="portfolio.html">作品總覽</a>&nbsp;>&nbsp;<a class="bread_active" href="#">製作無障礙金融友善網站</a>
+      </div>
+      <!-- 文章 -->
+      <li class="page">
+        <h3 class="page_title">製作無障礙金融友善網站</h3>
+        <div class="page_img">
+          <a class="magnify" href="images/page/page_2/page_2-1.jpg">
+            <img src="images/page/page_2/page_2-1.jpg" alt="左邊為舊版，右邊為新版">
+          </a>
+          <span class="page_img_text">左邊為舊版，右邊為新版</span>
+        </div>
+        <p class="page_content">
+          舊版的金融友善專區並沒有完全支援行動版的閱讀，需重新設計符合 RWD 的瀏覽方式，同時也需符合無障礙網路規範，以取得 AAA 級無障礙網站標章為首要目標。
+        </p>
+        <p class="page_content">
+          根據 W3C 規範，文字跟背景的顏色對比度需要達到4.5分以上，配色需要參照 Designs System 內的色彩規範，需要以達到條件的顏色當成網站的主色，切版撰寫程式時需要符合<a
+            class="page_hyper" href="https://accessibility.ncc.gov.tw/Questions/Category/19/1"
+            target="_blank">無障礙網站</a>的規格需求，操作動線必須要明顯且明確。
+        </p>
+        <p class="page_content">
+          舊版網站遇到多行利率資訊同時需呈現在表格時，電腦版因為頁面版面大，所以可以完全的呈現，但是轉換到手機版時，會把右半邊資訊都遮住，對於年長者可能會不知道表格可以滑動，甚至認為資料跑版，找不到他需要的外幣利率。所以在設計時針對「重複資訊且只有數字差異」的內容做
+          RWD
+          的排版，讓相同資訊收納在同一個卡片中，在手機版上比較好閱讀，但也並非所有的表格都適合去做卡片式的排版呈現，如果一個表格內只有3-4欄的情況之下，還是用原本的表格呈現就好，因為在手機上也可以完整呈現所有資訊，不需要額外轉換成卡片形式。
+        </p>
+        <div class="page_img">
+          <a class="magnify" href="images/page/page_2/page_2-2.jpg">
+            <img src="images/page/page_2/page_2-2.jpg" alt="左邊為舊版，右邊為新版">
+          </a>
+          <span class="page_img_text">左邊為舊版，右邊為新版</span>
+        </div>
+        <ul class="page_list_num">
+          <li>負責整體網站的視覺，同時也需要符合全行規範。</li>
+          <li>負責全站網頁切版與調整架構，須符合無障礙網站。</li>
+        </ul>
+        <p class="page_content">
+          改善原本電腦跟手機不是 RWD 的問題，以及舊版網頁跟其他的風格差異過大。同時新增一個首頁選單，讓用戶快速選擇服務類別。此專案也使用 Webpack 自動部署，並透過內建的 minify
+          壓縮整個程式碼，5個頁面的新版金融友善專區（含圖片）只有 200KB 左右，讓網頁 I/O 效能提升。
+        </p>
+        <!-- 回到置頂 -->
+        <div class="page_btnArea">
+          <a class="page_back" href="#">回到置頂</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/fancybox.js"></script>
+<script>
+  $(function () {
+    //手機版目錄選單
+    $('.menuM').click(function () {
+      $(this).toggleClass('js-menuM');
+      $('.menuMList').toggle();
+      $('body').toggleClass('fixed');
+    });
+    //點擊連結後關閉選單
+    $('.menuMList').click(function () {
+      $('.menuM').removeClass('js-menuM');
+      $(this).toggle();
+      $('body').removeClass('fixed');
+    });
+    //點擊選單切換分頁
+    $('.js-tabs-about').click(function () {
+      $('.tabs-about').slideDown();
+      $('.tabs-portfolio').slideUp();
+    });
+    $('.js-tabs-portfolio').click(function () {
+      $('.tabs-about').slideUp();
+      $('.tabs-portfolio').slideDown();
+    });
+
+    //置頂按鈕
+    $('.page_back').click(function () {
+      $('html,body').animate({
+        scrollTop: 0
+      }, 500);
+    });
+    //fancybox
+    $(".magnify").fancybox();
+  });
+  //手機版移除大頭
+  $(window).resize(function () {
+    let w = $(window).width();
+    if (w < 768) {
+      $('.profile').hide();
+    } else {
+      $('.profile').show();
+    }
+  });
+  window.onload = function () {
+    let w = $(window).width();
+    if (w < 768) {
+      $('.profile').hide();
+    } else {
+      $('.profile').show();
+    }
+  };
+</script>
+
+</html>

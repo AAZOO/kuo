@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KUO YEN-HONG</title>
+  <link rel="icon" href="images/kuo.ico" type="image/x-icon" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="KUO YEN-HONG">
+  <meta property="og:description" content="喜歡關注 UI/UX 與網頁設計，樂於將觀察到的趨勢與團隊分享，共同創造不一樣的專案成果！">
+  <meta property="og:url" content="https://aazoo.github.io/kuo/portfolio.html">
+  <meta property="og:image" content="images/fb.jpg">
+  <meta property="og:image:type" content="image/jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="about.html">
+        <h1 class="logo">KUO</h1>
+      </a>
+      <div class="menuM">
+        <div class="menuM--top"></div>
+        <div class="menuM--mid"></div>
+        <div class="menuM--btm"></div>
+      </div>
+    </div>
+  </header>
+  <div class="menuMList">
+    <ul>
+      <li>
+        <a href="portfolio.html">作品集</a>
+      </li>
+      <li>
+        <a href="about.html">關於我</a>
+      </li>
+    </ul>
+  </div>
+  <div class="wrap">
+    <div class="profile">
+      <div class="profile_circle">
+        <img class="profile_img" src="./images/borise.jpg" alt="Kuo Yen Hong">
+      </div>
+      <h2 class="profile_name">KUO YEN-HONG</h2>
+      <p class="profile_job">UI/UX designer | Front-end engineer </p>
+      <div class="profile_connect">
+        <a href="mailto:maurice7946@gmail.com"><img src="images/email.svg" alt="email"></a>
+        <a href="https://line.me/ti/p/~borise" target="_blank"><img src="images/line.svg" alt="line"></a>
+      </div>
+      <ul class="menuPC">
+        <li><a href="portfolio.html">作品集</a></li>
+        <li><a href="about.html">關於我</a></li>
+      </ul>
+    </div>
+    <!--hr class="divider"-->
+    <ul class="tabs">
+      <div class="tabs-portfolio">
+        <!-- 作品集 -->
+        <li class="portfolio">
+          <h3 class="portfolio_title">作品集</h3>
+          <!-- 建置全行Design System -->
+          <a class="portfolio_card" href="page_1.html">
+            <div class="portfolio_card_img">
+              <img src="images/card/card-1.jpg" alt="">
+            </div>
+            <h4 class="portfolio_card_title">
+              建置全行Design System
+            </h4>
+            <p class="portfolio_card_content">
+              讓不同團隊皆能取得設計共識，並推動全行體驗一致化。
+            </p>
+          </a>
+          <!-- 新版官網上線 -->
+          <a class="portfolio_card" href="page_5.html">
+            <div class="portfolio_card_img">
+              <img src="images/card/card-5.jpg" alt="">
+            </div>
+            <h4 class="portfolio_card_title">
+              新版官網上線
+            </h4>
+            <p class="portfolio_card_content">
+              因舊版網站長時間未改版，於今年上限第一階段。
+            </p>
+          </a>
+          <!-- 行動銀行功能提案 -->
+          <a class="portfolio_card" href="page_3.html">
+            <div class="portfolio_card_img">
+              <img src="images/card/card-3.jpg" alt="">
+            </div>
+            <h4 class="portfolio_card_title">
+              行動銀行功能提案
+            </h4>
+            <p class="portfolio_card_content">
+              新功能發想提案，新增群眾募資或聚餐自動拆帳的功能。
+            </p>
+          </a>
+          <!-- 無障礙金融友善網站 -->
+          <a class="portfolio_card" href="page_2.html">
+            <div class="portfolio_card_img">
+              <img src="images/card/card-2.jpg" alt="">
+            </div>
+            <h4 class="portfolio_card_title">
+              製作無障礙金融友善網站
+            </h4>
+            <p class="portfolio_card_content">
+              依照無障礙規範，將舊版網站改版。
+            </p>
+          </a>
+          <!-- 行銷網頁 -->
+          <a class="portfolio_card" href="page_4.html">
+            <div class="portfolio_card_img">
+              <img src="images/card/card-4.jpg" alt="">
+            </div>
+            <h4 class="portfolio_card_title">
+              Fintech 行外徵才行銷網頁
+            </h4>
+            <p class="portfolio_card_content">
+              以打造智慧金融生態系為訴求，針對文案設計發想，共提出3案的設計稿。
+            </p>
+          </a>
+        </li>
+      </div>
+    </ul>
+  </div>
+
+
+</body>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/scrollreveal.min.js"></script>
+<script>
+  $(function () {
+    //手機版目錄選單
+    $('.menuM').click(function () {
+      $(this).toggleClass('js-menuM');
+      $('.menuMList').toggle();
+      $('body').toggleClass('fixed');
+    });
+    //點擊連結後關閉選單
+    $('.menuMList').click(function () {
+      $('.menuM').removeClass('js-menuM');
+      $(this).toggle();
+      $('body').removeClass('fixed');
+    });
+  });
+  //手機版移除大頭
+  $(window).resize(function () {
+    let w = $(window).width();
+    if (w < 768) {
+      $('.profile').hide();
+    } else {
+      $('.profile').show();
+    }
+  });
+  window.onload = function () {
+    let w = $(window).width();
+    if (w < 768) {
+      $('.profile').hide();
+    } else {
+      $('.profile').show();
+    }
+  };
+  //ScrollReveal
+  window.sr = ScrollReveal();
+  sr.reveal('.portfolio_card', { origin: 'bottom', distance: '100px', duration: 500 });
+
+</script>
+
+</html>
